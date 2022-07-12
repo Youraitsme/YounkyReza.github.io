@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--My CSS-->
+    <link rel="stylesheet" href="belajarJS.css" />
+    <!--Akhir CSS-->
+
+    <!--My Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <title>Younky Reza</title>
+  </head>
+
+  <body id="home">
+    <div class="timnas container-fluid">
+    <div class="background img-fluid" style="background-image: url(img1/bgyr.jpeg); background-size: 100%;">
+  
+    <!--Awal navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top rounded" style="background-color: rgb(25, 125, 0);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Younky Reza AGP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-absolute end-0 me-md-3" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" href="#About">About Me</a>
+            <a class="nav-link active" href="#Picture">My Work</a>
+            <a class="nav-link active" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir navbar-->
+
+    <!--Slide Pic-->
+    <div class="picture img-fluid mt-4 pt-4">
+
+      <div class="hotal">
+          <img src="img1/mahasiswa.jpg"  class="img-fluid rounded" alt="gambar1">
+      </div>
+    
+      <div class="hotal">
+          <img src="img1/gaming.jpg"  class="img-fluid rounded" alt="gambar2">
+      </div>
+    
+      <div class="hotal">
+          <img src="img1/web desain.jpg"  class="img-fluid rounded" alt="gambar3">
+      </div>
+
+      <div class="hotal">
+          <img src="img1/logo desain.jpg"  class="img-fluid rounded" alt="gambar4">
+      </div>
+
+      <div class="hotal">
+        <img src="img1/html css.jpg" class="img-fluid rounded" alt="gambar5">
+      </div>
+
+    <script src="belajarJS.js"></script>
+    <!--Akhir Slide pic-->
+
+     <!--JUMBOTRON-->
+     <section class="jumbotron text-center pt-5 text-white">
+      <div class="jumbotron">
+      <img src="img1/itsme1.jpg" alt="Wow face" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Younky Reza AGP</h1>
+      <p class="lead">College Student | Web Desain</p>
+      </div>
+  <!--AKHIR JUMBOTRON-->
+
+    <!--About ME-->
+    <section id="About">
+    <div class="aboutbg img-fluid rounded" style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.235);">
+    <div class="about row text-center mb-3 mt-2">
+      <h3 class="edit mt-3">About Me</h3>
+    
+
+    <div class="row justify-content-center">
+      <div class="col-md-4 me-2 mb-3">
+        <p>Hello my name is Younky Reza AGP im from Ponorogo, East Java, Indonesian. I am a student from PGRI Madiun University. This is my first website that I made seriously. The purpose of making this website is for a place to learn about html, css and javascript. I learned to make a website by self-taught, watching videos on youtube, browsing the internet and accessing several sites about html, css and javascript.</p>
+      </div>
+
+      <div class="col-md-4 ms-2 md-3">
+        <p>
+          Besides making a website I'm learning about C++ and databases in college. I also mastered several techniques in making logos. I made my own logo, my game team, and several companies around my house. In making the logo I still use the application on my cellphone. About the game I played some competitive games on my cellphone, I even created my own team and have entered several tournaments.</p>
+    </div>
+    </div>
+  </div>
+  </section>
+    <!--Akhir About ME-->
+
+    <!--Photo Grid-->
+    <section id="Picture">
+    <div class="title mb-4 mt-2 text-center text-white" style="background-color: rgba(0, 0, 0, 0.212);">
+    <h3>My Work</h3>
+  <p>--swipe to see the next picture--</p>
+</div>
+    
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    
+    <div class="slider__item img-fluid">
+      <img class="slider__image" src="tencent/Logo1.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My Logo Desain</h2>
+      </div>
+    </div>
+
+    <div class="slider__item img-fluid">
+      <img class="slider__image" src="tencent/Poster1.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My Poster Desain</h2>
+      </div>
+    </div>
+
+    <div class="slider__item">
+      <img class="slider__image" src="tencent/Poster2.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My Poster Desain</h2>
+      </div>
+    </div>
+
+    <div class="slider__item img-fluid">
+      <img class="slider__image" src="tencent/Poster3.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My Poster Desain</h2>
+      </div>
+    </div>
+    
+    <div class="slider__item">
+      <img class="slider__image" src="tencent/poster4.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My Poster Desain</h2>
+      </div>
+    </div>
+
+    <div class="slider__item img-fluid">
+      <img class="slider__image" src="tencent/Vector1.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My Vector Art</h2>
+      </div>
+    </div>
+
+    <div class="slider__item img-fluid">
+      <img class="slider__image" src="tencent/vector2.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>My vector art</h2>
+      </div>
+    </div>
+
+  <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'"></button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'"></button>
+  </div>
+</div>
+</section>
+    <!--Akhir Photo Grid-->
+
+    <!--Contact Me-->
+    <section id="contact"> <div class="text-white rounded" style="background-color:rgba(0, 0, 0, 0.283);">
+      <div class="row justify-content-center mt-5 mb-4">
+        <div class="col-md-6">
+    <form>
+      <div class="kontak text-center"><h3>Contact Me</h3></div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="email">
+      </div>
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+
+      <div class="mb-3">
+        <label for="pesan" class="form-label">Message</label>
+        <textarea class="form-control" id="pesan" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn text-white" style="background-color: rgb(25, 125, 0);">Submit</button>
+    
+    </form>
+  </div>
+  </div>
+</div>
+  </section>
+    <!--Akhir Contact Me-->
+
+    <!--footer-->
+    <footer class="footer text-white text-center pt-3 pb-1 rounded" style="background-color: rgb(25, 125, 0);">
+   <p>Created by <a href="https://www.instagram.com/youngkireza_/?hl=id" class="text-white fw-bold">: @youngkireza_</a></p>
+  </footer>
+    <!--akhir footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+</div>
+  </body>
+</html>
